@@ -7,3 +7,6 @@ Font used in-game is Constantia, using SIL Open Font License.
 The base wooden plank texture for the boats was based on a texture from https://texture.ninja/, which hosts textures that are in the public domain.
 
 All other assets were created by me.
+
+Game can be downloaded from:
+https://ketsuppimakkara.itch.io/mare-nostrum
