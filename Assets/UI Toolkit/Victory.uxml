@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/background.uss?fileID=7433441132597879392&amp;guid=5af53c1a3bb045e4baa1ef4a6e420c51&amp;type=3#background" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/buttons.uss?fileID=7433441132597879392&amp;guid=2aa3b91cba222a04fa7757d8456c19a8&amp;type=3#buttons" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/label.uss?fileID=7433441132597879392&amp;guid=0885bc17396e54141aa9cac851194b67&amp;type=3#label" />
+    <ui:VisualElement name="Root" class="VisualElement" style="flex-grow: 1;">
+        <ui:VisualElement name="buttons" style="flex-grow: 1; bottom: 16px; left: 20px; right: 20px; top: 80%; position: absolute; flex-direction: row; align-items: stretch; justify-content: space-around;">
+            <ui:Button text="Return to Main menu" name="mainMenu" class="Button Label" style="margin-top: 10px; margin-bottom: 10px; position: relative; left: auto; flex-basis: 35%; font-size: 16px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="stats" style="flex-grow: 1; bottom: 20%; left: 20px; right: 20px; top: 10%; position: absolute; flex-direction: column; align-items: stretch; justify-content: space-around;">
+            <ui:VisualElement name="Title" style="top: auto; bottom: auto;">
+                <ui:Label text="Victory!" name="TitleLabel" class="Label" style="-unity-text-align: upper-center; font-size: 33px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Description" style="flex-grow: 1; position: relative; top: auto;">
+                <ui:Label text="All enemy boats destroyed!" name="DescriptionLabel" class="Label" style="font-size: 19px; -unity-text-align: upper-center;" />
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: center; align-self: center;">
+                    <ui:Label text="Your score: " name="DescriptionLabel" class="Label" style="font-size: 19px; -unity-text-align: upper-center;" />
+                    <ui:Label text="0" name="score" class="Label" style="font-size: 19px; -unity-text-align: upper-center;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

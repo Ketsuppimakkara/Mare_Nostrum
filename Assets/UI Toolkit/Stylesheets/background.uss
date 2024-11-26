@@ -1,0 +1,5 @@
+.VisualElement {
+    background-color: rgb(0, 0, 0);
+    background-image: url("project://database/Assets/UI%20Toolkit/UIImages/UIbackground.png?fileID=2800000&guid=cc7233ba2f5f7d544973d93c3b3bba1b&type=3#UIbackground");
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.51);
+}

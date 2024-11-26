@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/buttons.uss?fileID=7433441132597879392&amp;guid=2aa3b91cba222a04fa7757d8456c19a8&amp;type=3#buttons" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/background.uss?fileID=7433441132597879392&amp;guid=5af53c1a3bb045e4baa1ef4a6e420c51&amp;type=3#background" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/label.uss?fileID=7433441132597879392&amp;guid=0885bc17396e54141aa9cac851194b67&amp;type=3#label" />
+    <ui:VisualElement name="Root" class="VisualElement" style="flex-grow: 1;">
+        <ui:VisualElement name="buttons" style="flex-grow: 1; bottom: 16px; left: 20px; right: 20px; top: 80%; position: absolute; flex-direction: row; align-items: stretch; justify-content: space-around; padding-top: 15px; margin-right: 10%; margin-left: 10%;">
+            <ui:Button text="Play" name="startGame" class="Button Label" style="margin-top: 10px; margin-bottom: 10px; position: relative; left: auto; flex-basis: 35%;" />
+            <ui:Button text="Quit" name="quit" class="Button Label" style="margin-top: 10px; margin-bottom: 10px; position: relative; left: auto; flex-basis: 35%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="stats" style="flex-grow: 1; bottom: 20%; left: 20px; right: 20px; top: 10%; position: absolute; flex-direction: column; align-items: stretch; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <ui:VisualElement name="Title" style="top: auto; bottom: auto; padding-bottom: 20px; padding-top: 20px; padding-left: 10px; padding-right: 10px;">
+                <ui:Label text="Mare Nostrum" name="TitleLabel" class="Label" style="-unity-text-align: upper-center; font-size: 60px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Description" style="flex-grow: 1; position: relative; top: auto; flex-direction: column; align-items: stretch; justify-content: space-around; border-top-left-radius: 167px; border-top-right-radius: 167px; border-bottom-right-radius: 167px; border-bottom-left-radius: 167px;">
+                <ui:VisualElement style="flex-grow: 0; flex-direction: row; align-items: flex-start; justify-content: space-around; align-self: stretch;">
+                    <ui:Label text="Select your ship" name="DescriptionLabel" class="Label" style="-unity-text-align: upper-center; font-size: 19px; border-top-width: 30px; border-right-width: 100px; border-bottom-width: 30px; border-left-width: 100px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UIImages/radial%20shade.png?fileID=2800000&amp;guid=ef73a5c37adf6e040a856cce7706ba0e&amp;type=3#radial shade&quot;);" />
+                    <ui:Label text="Select opponents" name="DescriptionLabel" class="Label" style="font-size: 19px; -unity-text-align: upper-center; border-top-width: 30px; border-right-width: 100px; border-bottom-width: 30px; border-left-width: 100px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/UIImages/radial%20shade.png?fileID=2800000&amp;guid=ef73a5c37adf6e040a856cce7706ba0e&amp;type=3#radial shade&quot;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement name="VisualElement" style="align-self: stretch; flex-direction: row; justify-content: center; align-items: center; flex-grow: 1; flex-shrink: 1; padding-left: 25px; padding-right: 25px; padding-top: 25px; padding-bottom: 25px;">
+                        <ui:Button text="&lt;" name="previousBoat" class="Button Label" style="height: 55px; -unity-slice-scale: 0.1px;" />
+                        <ui:VisualElement name="boatImage" style="flex-grow: 1; align-items: auto; align-self: stretch; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px;" />
+                        <ui:Button text="&gt;" name="nextBoat" class="Button Label" style="height: 55px; -unity-slice-scale: 0.1px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1; flex-direction: row; align-self: stretch; justify-content: center; align-items: center; padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px;">
+                        <ui:Button text="&lt;" name="previousLevel" class="Button Label" style="height: 55px; -unity-slice-scale: 0.1px;" />
+                        <ui:VisualElement name="levelImage" style="flex-grow: 1; align-self: stretch; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+                        <ui:Button text="&gt;" name="nextLevel" class="Button Label" style="height: 55px; -unity-slice-scale: 0.1px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; align-self: stretch; justify-content: center; align-items: center; flex-direction: column-reverse; position: absolute; top: 4%; left: auto; right: 4%; width: 60px; height: 60px;">
+            <ui:Button text="?" name="howToPlay" class="Button Label" style="height: 55px; -unity-slice-scale: 0.1px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="tutorialWindow" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/UIImages/tutorialImage.png?fileID=2800000&amp;guid=a605b0f8d4c110c4980b9fcf3aeb1cb8&amp;type=3#tutorialImage&quot;); height: 854px; width: 1658px; align-items: center; justify-content: space-between; align-self: center; top: 15%; bottom: auto; display: none;" />
+    </ui:VisualElement>
+</ui:UXML>

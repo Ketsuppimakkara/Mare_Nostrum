@@ -1,0 +1,17 @@
+.Button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(96, 0, 0);
+    font-size: 40px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/UI%20Toolkit/UIImages/button.png?fileID=338174090&guid=dd2825b154f06a740bd1cb991edf0225&type=3#button_0");
+    -unity-background-scale-mode: scale-and-crop;
+    -unity-slice-scale: 0.3px;
+    transition-duration: 0.1s;
+}
+
+.Button:hover {
+    scale: 1.05 1.05;
+}

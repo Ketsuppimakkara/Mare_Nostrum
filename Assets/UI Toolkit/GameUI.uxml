@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/label.uss?fileID=7433441132597879392&amp;guid=0885bc17396e54141aa9cac851194b67&amp;type=3#label" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/buttons.uss?fileID=7433441132597879392&amp;guid=2aa3b91cba222a04fa7757d8456c19a8&amp;type=3#buttons" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/background.uss?fileID=7433441132597879392&amp;guid=5af53c1a3bb045e4baa1ef4a6e420c51&amp;type=3#background" />
+    <Style src="project://database/Assets/UI%20Toolkit/Stylesheets/progressbar.uss?fileID=7433441132597879392&amp;guid=de304a486149c3a48ba23b7ca0b5c501&amp;type=3#progressbar" />
+    <ui:VisualElement name="Root" style="flex-grow: 1;">
+        <ui:VisualElement name="Header" style="flex-grow: 1; top: auto; height: 0; flex-direction: row;">
+            <ui:VisualElement style="flex-grow: 1; align-self: center; justify-content: center;">
+                <ui:Label text="Score:" name="Label" class="Label" style="-unity-text-align: middle-left; align-self: flex-end; font-size: 22px;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; align-items: stretch; align-self: center; justify-content: center;">
+                <ui:Label text="0" name="score" class="Label" style="-unity-text-align: middle-left; align-self: flex-start; font-size: 22px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; height: 22%;" />
+        <ui:VisualElement name="Footer" style="flex-direction: row; margin-left: 5%; margin-bottom: 4%; margin-right: 5%; margin-top: 0; height: 12%;">
+            <ui:VisualElement name="BoatStatus" class="VisualElement" style="flex-grow: 1; flex-basis: auto; align-self: stretch;">
+                <ui:ProgressBar value="0.5" title="Flooding level" name="FloodingStatusBar" high-value="1" class="Label" style="justify-content: space-between; align-self: stretch; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px;" />
+                <ui:VisualElement name="StatusTexts" style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-self: stretch; align-items: stretch;">
+                    <ui:VisualElement name="Key" style="flex-grow: 1; align-self: center; justify-content: center; align-items: center; flex-direction: column;">
+                        <ui:Label text="Soldiers" name="Soldiers" class="Label" style="-unity-text-align: middle-left;" />
+                        <ui:Label text="Rowers" name="Rowers" class="Label" style="text-overflow: clip; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Value" style="flex-grow: 1; flex-direction: row; justify-content: space-around; align-self: stretch;">
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1; align-self: stretch; align-items: center; justify-content: center;">
+                            <ui:Label text="15" name="CurrentSoldierCount" class="Label" style="-unity-text-align: middle-left;" />
+                            <ui:Label text="32" name="CurrentRowerCount" class="Label" style="-unity-text-align: middle-left;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Separators" style="flex-grow: 1; align-self: stretch; justify-content: center; align-items: center;">
+                            <ui:Label text="/" name="Separator" class="Label" style="-unity-text-align: middle-left;" />
+                            <ui:Label text="/" name="Separator" class="Label" style="white-space: nowrap; -unity-text-align: middle-left;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="VisualElement" style="flex-grow: 1; align-self: stretch; align-items: center; justify-content: center;">
+                            <ui:Label text="24" name="MaxSoldierCount" class="Label" style="-unity-text-align: middle-left;" />
+                            <ui:Label text="32" name="MaxRowerCount" class="Label" style="-unity-text-align: middle-left;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-basis: 70%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

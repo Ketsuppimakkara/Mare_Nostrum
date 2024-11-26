@@ -1,0 +1,5 @@
+.Label {
+    -unity-font-definition: url("project://database/Assets/UI%20Toolkit/Fonts/Constantine-lq0q.ttf?fileID=12800000&guid=c705f72e3db3bef4d9eb02c2f79f3fbc&type=3#Constantine-lq0q");
+    -unity-font-style: normal;
+    color: rgb(255, 215, 0);
+}
